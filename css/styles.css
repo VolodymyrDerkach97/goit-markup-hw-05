@@ -729,7 +729,8 @@ img {
     color: var(--primary-white-color);
 }
 
-.portfolio-list-link:hover .portfolio-sub-overlay {
+.portfolio-list-link:hover .portfolio-sub-overlay,
+.portfolio-list-link:focus .portfolio-sub-overlay {
     transform: translate(0);
     opacity: 1; 
 }
