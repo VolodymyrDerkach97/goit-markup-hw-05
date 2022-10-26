@@ -711,7 +711,7 @@ img {
 
 .portfolio-sub-overlay {
     position: absolute;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms var(--cubic-bezier-primary), 
                 opacity 250ms var(--cubic-bezier-primary);  
     opacity: 0;
@@ -786,8 +786,8 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     transform: scale(1);
     transition: transform 1000ms var(--cubic-bezier-primary),
