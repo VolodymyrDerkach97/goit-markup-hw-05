@@ -8,6 +8,8 @@
    --bg-color:#2f303a;
    --icon-color: #AFB1B8;
    --hover-bg: rgba(33, 150, 243, 0.9);
+   --form-border-color: rgba(33, 33, 33, 0.2);
+   
 
    --cubic-bezier-primary:cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -865,6 +867,7 @@ img {
     width: 528px;
     height: 581px;
 
+    padding: 40px;
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -900,4 +903,88 @@ img {
     border-radius: 50%;
 }
 
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.form-title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.form-input{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 12px;
+    padding-left: 42px;
+}
+
+.form-input-box{
+    position: relative;
+    width: 100%;
+}
+
+.form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.form-input, .form-comment{
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+}
+.form-comment {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.form-checkbox-label{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primaty-text-color);
+}
+
+.form-button {
+    width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border: 0px solid transparent;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--cubic-bezier-primary), 
+                box-shadow 250ms var(--cubic-bezier-primary); 
+
+    background-color: var(--accent-color); 
+    color: var(--primary-white-color);   
+    font-style: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
   
